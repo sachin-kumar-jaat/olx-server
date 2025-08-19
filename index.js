@@ -1,17 +1,21 @@
 
-
 const express = require("express")
 const cors =  require ("cors")
+const dotenv = require("dotenv")
+
+dotenv.config();
 const app = express()
 PORT = 5000;
 require("./db/dbconnect")
 const router = require("./Router/router")
 
-app.use(cors(
-    {
-        origin: "http://localhost:5173"
-      }
-))
+const corsOptions ={
+    origin:process.env.FRONTEND_URL,
+    methods:["GET","POST"],
+    allowedHeaders:["Content-Type","Authorization"]
+}
+
+app.use(cors(corsOptions))
 app.use(express.json())
 app.use(express.urlencoded({extended:false}))
 
