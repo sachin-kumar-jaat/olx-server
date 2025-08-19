@@ -70,6 +70,10 @@ router.get('/olxid/:id', async (req, res) => {
   }
 });
 
+router.get('/',(req, res) => {
+  res.send("welcome to server page")
+});
+
 
 module.exports = router
 
