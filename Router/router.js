@@ -70,7 +70,7 @@ router.get('/olxid/:id', async (req, res) => {
   }
 });
 
-router.post('/',(req, res) => {
+router.get('/',(req, res) => {
   res.send("welcome to server page")
 });
 
