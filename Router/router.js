@@ -5,7 +5,7 @@ const multer = require('multer');
 
 
 
-  router.get('/',(req, res) => {
+  router.get('/gg',(req, res) => {
   res.send("welcome to server page")
 });
 const storage = multer.memoryStorage();
