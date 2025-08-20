@@ -4,6 +4,10 @@ const olxdata = require("../Schema/sc")
 const multer = require('multer');
 
 
+
+  router.get('/',(req, res) => {
+  res.send("welcome to server page")
+});
 const storage = multer.memoryStorage();
 const upload = multer({ storage: storage });
 
@@ -70,9 +74,7 @@ router.get('/olxid/:id', async (req, res) => {
   }
 });
 
-router.get('/',(req, res) => {
-  res.send("welcome to server page")
-});
+
 
 
 module.exports = router
