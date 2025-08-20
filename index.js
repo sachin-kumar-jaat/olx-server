@@ -9,11 +9,7 @@ require("dotenv").config()
 const router = require("./Router/router")
 
 
-app.use(cors(
-    {
-        origin:"https://mern-olx-project.netlify.app/"
-    }
-))
+app.use(cors())
 app.use(express.json())
 app.use(express.urlencoded({extended:false}))
 
