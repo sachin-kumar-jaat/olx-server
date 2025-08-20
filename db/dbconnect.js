@@ -5,5 +5,5 @@ main().then(
 ).catch(err => console.log(err))
 
 async function main(){
-  await  mongoose.connect("mongodb+srv://kumarsachin88131:9ajSeET6FdQXxCVg@cluster0.mgapbil.mongodb.net/olx")
+  await  mongoose.connect("mongodb+srv://kumarsachin88131:WKEgKlom47x1QtBQ@cluster0.o0nsbn5.mongodb.net/olx")
 }
