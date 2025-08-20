@@ -87,6 +87,7 @@ const olxSchema = new mongoose.Schema({
       mimeType: String,
       size: Number,
       base64: String,
+      required: true
     }
   ]
 })
